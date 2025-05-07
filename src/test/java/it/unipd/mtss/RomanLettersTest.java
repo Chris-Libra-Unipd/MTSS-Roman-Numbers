@@ -60,7 +60,7 @@ public class RomanLettersTest {
             " / . \\ " ,
             "/_/ \\_\\"
         };
-        assertArrayEquals(expected, RomanLetters.V.getAsciiArt());
+        assertArrayEquals(expected, RomanLetters.X.getAsciiArt());
     }
 
     @Test
@@ -73,7 +73,7 @@ public class RomanLettersTest {
             "| |____ ",
             "|______|"
         };
-        assertArrayEquals(expected, RomanLetters.V.getAsciiArt());
+        assertArrayEquals(expected, RomanLetters.L.getAsciiArt());
     }
 
     @Test
@@ -86,7 +86,7 @@ public class RomanLettersTest {
             "| |____ ",
             " \\_____|"
         };
-        assertArrayEquals(expected, RomanLetters.V.getAsciiArt());
+        assertArrayEquals(expected, RomanLetters.C.getAsciiArt());
     }
 
     @Test
@@ -99,7 +99,7 @@ public class RomanLettersTest {
             "| |__| |",
             "|_____/ "
         };
-        assertArrayEquals(expected, RomanLetters.V.getAsciiArt());
+        assertArrayEquals(expected, RomanLetters.D.getAsciiArt());
     }
 
     @Test
@@ -112,7 +112,7 @@ public class RomanLettersTest {
             "| |  | |",
             "|_|  |_|"
         };
-        assertArrayEquals(expected, RomanLetters.V.getAsciiArt());
+        assertArrayEquals(expected, RomanLetters.M.getAsciiArt());
     }
 
     @Test

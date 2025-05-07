@@ -5,27 +5,79 @@
 package it.unipd.mtss; 
 
 //classe di supporto per la stampa in ascii art
-
 public enum RomanLetters {
-    I(null),
-    V(null),
-    X(null),
-    L(null),
-    C(null),
-    D(null),
-    M(null);
+    I(new String[] {
+        " _____ ",
+        "|_   _|",
+        "  | |  ",
+        "  | |  ",
+        " _| |_ ",
+        "|_____|"
+    }),
+    V(new String[] {
+        "__      __",
+        "\\ \\    / /",
+        " \\ \\  / / ",
+        "  \\ \\/ /  ",
+        "   \\  /   ",
+        "    \\/    "
+    }),
+    X(new String[] {
+        "__   __",
+        "\\ \\ / /",
+        " \\ V / " ,
+        "  > <  "  ,
+        " / . \\ " ,
+        "/_/ \\_\\"
+    }),
+    L(new String[] {
+        " _      ",
+        "| |     ",
+        "| |     ",
+        "| |     ",
+        "| |____ ",
+        "|______|"
+    }),
+    C(new String[] {
+        "  _____ ",
+        " / ____|",
+        "| |     ",
+        "| |     ",
+        "| |____ ",
+        " \\_____|"
+    }),
+    D(new String[] {
+        " _____  ",
+        "|  __ \\ ",
+        "| |  | |",
+        "| |  | |",
+        "| |__| |",
+        "|_____/ "
+    }),
+    M(new String[] {
+        " __  __ ",
+        "|  \\/  |",
+        "| \\  / |",
+        "| |\\/| |",
+        "| |  | |",
+        "|_|  |_|"
+    });
 
     private final String[] asciiArt;
 
     private RomanLetters(String[] asciiArt) {
-        this.asciiArt = null;
+        this.asciiArt = asciiArt;
     }
 
     public String[] getAsciiArt() {
-        return null;
+        return asciiArt;
     }
 
     public static RomanLetters fromChar(char c) {
-        throw new UnsupportedOperationException("Non ancora implementato");
+        try {
+            return valueOf(String.valueOf(c));
+        } catch (IllegalArgumentException e) {
+            return null;
+        }
     }
 }
