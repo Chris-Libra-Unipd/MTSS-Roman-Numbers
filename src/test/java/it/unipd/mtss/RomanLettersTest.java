@@ -150,7 +150,7 @@ public class RomanLettersTest {
     @Test
     public void testAllLettersHaveSameHeight() {
         for (RomanLetters letter : RomanLetters.values()) {
-            assertEquals("Letter " + letter.name() + " has wrong number of lines",
+            assertEquals("Letter"+letter.name()+" has wrong number of lines",
                 6, letter.getAsciiArt().length);
         }
     }
