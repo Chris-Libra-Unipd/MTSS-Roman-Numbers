@@ -3,11 +3,6 @@
  // [Christian] [Libralato] [ 2 101 047] 
 ////////////////////////////////////////////////////////////////////
 package it.unipd.mtss;
-
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )

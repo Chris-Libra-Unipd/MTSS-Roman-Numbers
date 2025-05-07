@@ -72,7 +72,6 @@ public enum RomanLetters {
     public String[] getAsciiArt() {
         return asciiArt;
     }
-
     public static RomanLetters fromChar(char c) {
         try {
             return valueOf(String.valueOf(c));

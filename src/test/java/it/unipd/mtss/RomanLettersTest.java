@@ -10,18 +10,13 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 import org.junit.Test; 
-  
 
 public class RomanLettersTest {
-         /** 
-      * Rigorous Test :-) 
-      */ 
       @Test 
       public void shouldAnswerWithTrue() 
       { 
           assertTrue( true ); 
       } 
-
       @Test
       public void testGetAsciiArtForI() {
           String[] expected = {
@@ -32,11 +27,8 @@ public class RomanLettersTest {
               " _| |_ ",
               "|_____|"
           };
-
-
         assertArrayEquals(expected, RomanLetters.I.getAsciiArt());
     }
-
     @Test
     public void testGetAsciiArtForV() {
         String[] expected = {
@@ -49,7 +41,6 @@ public class RomanLettersTest {
         };
         assertArrayEquals(expected, RomanLetters.V.getAsciiArt());
     }
-
     @Test
     public void testGetAsciiArtForX() {
         String[] expected = {
@@ -62,7 +53,6 @@ public class RomanLettersTest {
         };
         assertArrayEquals(expected, RomanLetters.X.getAsciiArt());
     }
-
     @Test
     public void testGetAsciiArtForL() {
         String[] expected = {
@@ -75,7 +65,6 @@ public class RomanLettersTest {
         };
         assertArrayEquals(expected, RomanLetters.L.getAsciiArt());
     }
-
     @Test
     public void testGetAsciiArtForC() {
         String[] expected = {
@@ -88,7 +77,6 @@ public class RomanLettersTest {
         };
         assertArrayEquals(expected, RomanLetters.C.getAsciiArt());
     }
-
     @Test
     public void testGetAsciiArtForD() {
         String[] expected = {
@@ -101,7 +89,6 @@ public class RomanLettersTest {
         };
         assertArrayEquals(expected, RomanLetters.D.getAsciiArt());
     }
-
     @Test
     public void testGetAsciiArtForM() {
         String[] expected = {
@@ -114,7 +101,6 @@ public class RomanLettersTest {
         };
         assertArrayEquals(expected, RomanLetters.M.getAsciiArt());
     }
-
     @Test
     public void testFromCharValid() {
         assertEquals(RomanLetters.I, RomanLetters.fromChar('I'));
@@ -125,7 +111,6 @@ public class RomanLettersTest {
         assertEquals(RomanLetters.D, RomanLetters.fromChar('D'));
         assertEquals(RomanLetters.M, RomanLetters.fromChar('M'));
     }
-
     @Test
     public void testFromCharInvalid() {
         assertNull(RomanLetters.fromChar('A'));
@@ -133,7 +118,6 @@ public class RomanLettersTest {
         assertNull(RomanLetters.fromChar(' '));
         assertNull(RomanLetters.fromChar('@'));
     }
-
     @Test
     public void testEnumValues() {
         RomanLetters[] values = RomanLetters.values();
@@ -146,7 +130,6 @@ public class RomanLettersTest {
         assertEquals(RomanLetters.D, values[5]);
         assertEquals(RomanLetters.M, values[6]);
     }
-
     @Test
     public void testAllLettersHaveSameHeight() {
         for (RomanLetters letter : RomanLetters.values()) {
@@ -154,7 +137,6 @@ public class RomanLettersTest {
                 6, letter.getAsciiArt().length);
         }
     }
-
     @Test
     public void testNoEmptyLines() {
         for (RomanLetters letter : RomanLetters.values()) {

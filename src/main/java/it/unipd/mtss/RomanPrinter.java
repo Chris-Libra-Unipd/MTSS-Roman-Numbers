@@ -9,18 +9,15 @@ package it.unipd.mtss;
    return printAsciiArt(IntegerToRoman.convert(num)); 
  } 
 
-
 private static String printAsciiArt(String romanNumber){ 
   if (romanNumber == null || romanNumber.isEmpty()) {
     return "";
     }
 
 StringBuilder risultato = new StringBuilder();
-
 try {
     // Converti ogni carattere in maiuscolo per sicurezza
     romanNumber = romanNumber.toUpperCase();
-    
     // Per ogni riga dell'ASCII art (6 righe)
     for (int row = 0; row < 6; row++) {
         // Per ogni carattere nel numero romano
@@ -38,9 +35,7 @@ try {
 System.err.println("Errore nella generazione dell'ASCII art: "+e.getMessage());
     return "";
 }
-
 return(risultato.toString());
-
 }
  } 
 
