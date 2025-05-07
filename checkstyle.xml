@@ -45,7 +45,7 @@
 
     
   <module name="Header">
-    <property name="headerFile" value="LICENSE.md"/>
+    <property name="headerFile" value="LICENSE.txt"/>
     <property name="fileExtensions" value="java"/>
   </module>
 
