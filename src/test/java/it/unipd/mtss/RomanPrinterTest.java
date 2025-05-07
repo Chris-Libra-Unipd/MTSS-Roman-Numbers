@@ -26,6 +26,22 @@ package it.unipd.mtss;
         "|______|     \\/     |_____| \n";
         assertEquals(expected,RomanPrinter.print(56));
     }
+    @Test 
+    public void stringa_vuota(){
+       String expected="";
+
+       assertEquals(expected,RomanPrinter.printAsciiArt(""));
+    }
+    public void carattere_non_valido(){
+        String expected="";
+        assertEquals(expected,RomanPrinter.printAsciiArt("AAA"));
+     }
+     @Test
+public void testPrintInputNegativo() {
+    String expected = "";
+    assertEquals(expected, RomanPrinter.print(-1));
+}
  } 
+ 
   
  
