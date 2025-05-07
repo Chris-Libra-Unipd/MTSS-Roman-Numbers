@@ -9,7 +9,7 @@ package it.unipd.mtss;
    return printAsciiArt(IntegerToRoman.convert(num)); 
  } 
 
-private static String printAsciiArt(String romanNumber){ 
+ static String printAsciiArt(String romanNumber){ 
   if (romanNumber == null || romanNumber.isEmpty()) {
     return "";
     }
