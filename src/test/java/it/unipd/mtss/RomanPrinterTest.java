@@ -36,7 +36,12 @@ package it.unipd.mtss;
         String expected="";
         assertEquals(expected,RomanPrinter.printAsciiArt("AAA"));
      }
-
+     @Test
+public void testPrintInputNegativo() {
+    String expected = "";
+    assertEquals(expected, RomanPrinter.print(-1));
+}
  } 
+ 
   
  
